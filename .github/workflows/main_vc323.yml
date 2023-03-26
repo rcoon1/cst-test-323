@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy JAR app to Azure Web App - VC323
+name: Build and deploy JAR app to Azure Web App - vc323
 
 on:
   push:
@@ -47,7 +47,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'VC323'
+          app-name: 'vc323'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8C4E645318B240AEABAED9117F17B7F4 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_932E820AB59F44109C7F2079A055C385 }}
           package: '*.jar'
